@@ -10,7 +10,8 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
      */
     const { eventType, monthDate } = req.query;
     console.log(req.query)
-    
+    console.log(req.body)
+
     let date = moment();
     let startDate = moment(monthDate + '-01');
     let endDate = moment(monthDate + '-01').add(1, 'months').format('YYYY-MM-DD')
