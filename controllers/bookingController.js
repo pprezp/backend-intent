@@ -30,6 +30,7 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
             });
         }
     } catch (error) {
+        console.log(error)
         res.status(200).send({
             error: true,
             message: "Ha ocurrido un error, intentalo de nuevo."
