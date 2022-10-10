@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "L30n1d4sSp4rt4n",
+    "database": "intent-dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "bae7f38d1472ea",
+    "password": "85911d27",
+    "database": "heroku_6d1947b57da2bc1",
+    "host": "us-cdbr-east-06.cleardb.net",
+    "dialect": "mysql"
+  }
+}
