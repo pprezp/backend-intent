@@ -8,7 +8,7 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
      * monthDate = anno-month (2022-10)
      *
      */
-    const { eventType, monthDate } = req.query;
+    const { eventType, monthDate } = req.body;
     console.log(req.query)
     console.log(req.body)
 
