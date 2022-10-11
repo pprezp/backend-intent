@@ -8,11 +8,15 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
      * monthDate = anno-month (2022-10)
      *
      */
-    const { eventType, monthDate } = req.params;
+    const { eventType, monthDate } = req.query;
 
     let date = moment();
     let startDate = moment(monthDate + '-01');
     let endDate = moment(monthDate + '-01').add(1, 'months').format('YYYY-MM-DD');
+
+    console.log(date.format('YYYY-MM-DD'))
+    console.log(startDate.format('YYYY-MM-DD'))
+    console.log(endDate)
 
     startDate = ( date.isAfter(startDate) ) ? date.format('YYYY-MM-DD') : startDate.format('YYYY-MM-DD');
 

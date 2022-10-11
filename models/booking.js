@@ -59,7 +59,8 @@ module.exports = (sequelize, DataTypes) => {
         date:{
           [ Op.between ]: [ startDate, endDate ]
         }
-      }
+      },
+      limit: 8
     });
     return eventos;
   }
