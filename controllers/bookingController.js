@@ -8,7 +8,7 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
      * monthDate = anno-month (2022-10)
      *
      */
-    const { eventType, monthDate } = req.body;
+    const { eventType, monthDate } = req.params;
 
     let date = moment();
     let startDate = moment(monthDate + '-01');
