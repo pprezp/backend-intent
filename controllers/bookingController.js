@@ -14,14 +14,10 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
     let startDate = moment(monthDate + '-01');
     let endDate = moment(monthDate + '-01').add(1, 'months').format('YYYY-MM-DD');
 
-    console.log(date.format('YYYY-MM-DD'))
-    console.log(startDate.format('YYYY-MM-DD'))
-    console.log(endDate)
-
     startDate = ( date.isAfter(startDate) ) ? date.format('YYYY-MM-DD') : startDate.format('YYYY-MM-DD');
 
     try {
-        let eventos = await booking.searchEventsByType(eventType, startDate, endDate);
+        let eventos = (eventType < 3) ? await booking.searchEventsByType(eventType, startDate, endDate) : await booking.searchEvents(startDate, endDate);
         if( eventos.length > 0 ){
             res.status(200).json({
                 error: false,

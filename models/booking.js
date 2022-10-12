@@ -56,11 +56,25 @@ module.exports = (sequelize, DataTypes) => {
     let eventos = await booking.findAll({
       where:{
         type: type,
+        status: 1,
         date:{
           [ Op.between ]: [ startDate, endDate ]
         }
       },
       limit: 8
+    });
+    return eventos;
+  }
+
+  booking.searchEvents = async(startDate, endDate) => {
+    let eventos = await booking.findAll({
+      where:{
+        status:1,
+        date:{
+          [ Op.between ]: [ startDate, endDate ]
+        }
+      },
+      limit: 12
     });
     return eventos;
   }
