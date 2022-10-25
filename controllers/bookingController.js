@@ -4,8 +4,7 @@ const moment = require('moment')
 exports.getEventsByRangeDateFromNow = async (req, res) => {
 
     /**
-     * @params 
-     * monthDate = anno-month (2022-10)
+     * @params  monthDate = anno-month (2022-10)
      *
      */
     const { eventType, monthDate } = req.query;
@@ -38,6 +37,24 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
     }
 }
 
-exports.getEventsById = () => {
-
+exports.searchEventById = async(req, res, next) => {
+    let { idEvento } = req.query;
+    try {
+        let evento = await booking.searchEventsById(idEvento);
+        if (evento) {
+            res.status(200).json({
+                success: true,
+                evento: evento
+            });
+        }else{
+            res.status(200).json({
+                success: false
+            });            
+        }
+    } catch (error) {
+        console.log(error)
+        res.status(200).json({
+            success: false
+        })
+    }
 }
