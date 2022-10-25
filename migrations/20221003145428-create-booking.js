@@ -11,19 +11,26 @@ module.exports = {
       },
       name: Sequelize.STRING,
       speaker: Sequelize.STRING,
-      description: Sequelize.STRING,
-      shortDescription: Sequelize.STRING,
+      description: Sequelize.STRING(1000),
+      shortDescription: Sequelize.STRING(1000),
       date: Sequelize.DATE,
+      location: Sequelize.STRING,
       bannerurl: Sequelize.STRING,
-      status: Sequelize.TINYINT,
+      storeurl: Sequelize.STRING,
+      status:{ 
+        type: Sequelize.TINYINT,
+        defaultValue: 1
+      },
       type: Sequelize.TINYINT,
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
       }
     });
   },
