@@ -22,20 +22,26 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: DataTypes.STRING,
     speaker: DataTypes.STRING,
-    description: DataTypes.STRING,
-    shortDescription: DataTypes.STRING,
+    description: DataTypes.STRING(1000),
+    shortDescription: DataTypes.STRING(1000),
     date: DataTypes.DATE,
+    location: DataTypes.STRING,
     bannerurl: DataTypes.STRING,
-    status: DataTypes.TINYINT,
+    storeurl: DataTypes.STRING,
     type: DataTypes.TINYINT,
-
+    status: {
+      type: DataTypes.TINYINT,
+      defaultValue: 1
+    },
     createdAt: {
       allowNull: false,
-      type: DataTypes.DATE
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW
     },
     updatedAt: {
       allowNull: false,
-      type: DataTypes.DATE
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW
     }
   }, {
     sequelize,

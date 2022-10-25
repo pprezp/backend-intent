@@ -29,15 +29,15 @@ const fillData = () => {
   for (let index = 0; index < 50; index++) {
     
     data.push({
-      name: 'Taller num ' + (index + 1),
-      speaker: 'Pablo Perez',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis turpis a massa vulputate semper. Suspendisse vel pretium orci. Mauris suscipit dui et ultrices aliquet. Fusce accumsan consequat nulla vitae lobortis.',
-      shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis turpis a massa vulputate semper. Suspendisse vel pretium orci. Mauris suscipit dui et ultrices aliquet. Fusce accumsan consequat nulla vitae lobortis.',
+      name: 'Descubriéndome desde el cuerpo',
+      speaker: 'Mari Sierra',
+      description: 'Mar Sierra es educadora somática, danzadora, diseñadora y creadora de programas de bienestar. Funda Cuerpo Criolla para expandir la cultura somática, bajo la premisa de que mente-cuerpo-corazón-creación son un mismo pulso creador y hay que aprender a cultivarlos. Forma parte del equipo fundador de Oye Wellness, una plataforma de bienestar creativo.',
+      shortDescription: 'La mujer creativa es la que se conoce.|La que sabe usar su poder en beneficio de todxs.|La que se sabe auto-regular, sanar y sana a lxs demás con su mera presencia.|En este taller nos acercamos al campo sutil de la energía vibrando en el cuerpo.|Tocaremos los lugares donde la energía no fluye idóneamente. Reconocemos el eco de las heridas del pasado que carga nuestra postura. Las danzamos, las nombramos e incluso las trazamos en un mapa para transmutarlas y liberarlas. Parte clase de movimiento consciente, parte meditación de regresión y parte arte-terapia, Mar Sierra nos guiará por una potente reconexión con las historias que habitan en nuestros cuerpos.|Un ritual para honrar el cuerpo como vasija de nuestra fuerza creadora.',
       date: randomDate(),
-      status: 1,
-      type: randomValue(1,2),
-      createdAt: moment().format('YYYY-MM-DD HH:mm:ss'),
-      updatedAt: moment().format('YYYY-MM-DD HH:mm:ss')
+      location: 'Casa in-Tent Orizaba 101, Roma Norte. CDMX.',
+      bannerurl: 'https://sms.comonsens.com.mx/assets/Imagenes/taller1.jpeg',
+      storeurl: 'https://store.in-tent.mx/products/26oct22-power-yoga-con-jaque-meschoulam',
+      type: randomValue(1,2)
     })
     
   }
