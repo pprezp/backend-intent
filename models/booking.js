@@ -67,6 +67,10 @@ module.exports = (sequelize, DataTypes) => {
           [ Op.between ]: [ startDate, endDate ]
         }
       },
+      order:[
+        ['date', 'ASC']
+      ]
+      ,
       limit: 8
     });
     return eventos;
@@ -80,6 +84,9 @@ module.exports = (sequelize, DataTypes) => {
           [ Op.between ]: [ startDate, endDate ]
         }
       },
+      order:[
+        ['date', 'ASC']
+      ],
       limit: 12
     });
     return eventos;
