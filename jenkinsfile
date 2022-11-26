@@ -21,7 +21,7 @@ pipeline {
                         fi
                     done
                     docker build -t node-intent -f Dockerfile .
-                    docker run --name node-intent --rm -d -p 9966:3100 node-intent 
+                    docker run --name node-intent --rm -d -p 9966:3100updating r node-intent 
                 '''
             }
         }
