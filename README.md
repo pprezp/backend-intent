@@ -6,6 +6,7 @@
 <code>
     El proyecto elegido es un landing page el cual utiliza un pequeño backend conectado a una base de datos de tipo sql, en donde se consultara informacion acerca de eventos del cliente y podrán hacer la compra direccionados al store desde el landing
 </code>
+
     * Objetivos
         * Implementar  prácticas ágiles para el desarrollo eficaz y este pueda ser entregado en tiempo.
         * Generar un landing page funcional separado en componentes frontend
@@ -13,10 +14,10 @@
         * Diseñar una base de datos sencilla con los campos necesarios para cubrir las necesidades del cliente.
     * Alcances
         * [S](): Crear un landing page que se adapte al diseño proporcionado, adaptativo y con las funciones acordadas y obtener de esta manera un aumento en el número de clientes.
-        * [M]()
-        * [A]() Con cargas de trabajo adecuadas, y funcinalidades divididos en componentes, tanto en back como en front
-        * [R]() Tener el sitio web en producción 100% funcional.
-        * [T]() Terminar el proyecto en al menos 2 meses.
+        * [M](): 
+        * [A](): Con cargas de trabajo adecuadas, y funcinalidades divididos en componentes, tanto en back como en front
+        * [R](): Tener el sitio web en producción 100% funcional.
+        * [T](): Terminar el proyecto en al menos 2 meses.
 
 2. Considerando lo visto en la sesión, determina si puedes gestionarlo con prácticas ágiles (Lean o Kanban) y enlista las prácticas que puedes utilizar. Es importante que justifiques esta decisión.
 
