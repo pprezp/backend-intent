@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 pipeline {
   agent any
-  tools {nodejs "latest"}
+  tools {nodejs}
   stages {
     stage('preflight') {
       steps {
@@ -18,7 +18,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'npm test'
+        sh 'npm test' 
       }
     }
   }
