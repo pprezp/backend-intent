@@ -25,7 +25,7 @@ exports.getEventsByRangeDateFromNow = async (req, res) => {
         }else{
             res.status(200).json({
                 error: false,
-                message: "No se han encontrado eventos para esta fecha."
+                message: "No se han encontrado eventos creados."
             });
         }
     } catch (error) {
