@@ -13,7 +13,7 @@ const port    = process.env.PORT;
 
 /* Importacion de rutas del backend */
 const booking = require('./routes/booking/Booking');
-
+const root = require('./routes/root/Root');
 
 app.use( cors({
   origin: '*',
@@ -23,6 +23,7 @@ app.use(bodyParser.json())
 app.use( bodyParser.urlencoded( { extended: false } ) );
 
 /**USo de las rutas importadas */
+app.use('/', root())
 app.use('/booking', booking())
 
 
