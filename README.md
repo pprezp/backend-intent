@@ -89,8 +89,8 @@ En el repositorio se encuentran los archivos de terraform y docker para crear lo
 * Descargar a tu maquina con el comando <code> git clone</code>
 * Una vez en local, desde terminal ingresar a la raíz del proyecto y ejecutar <code>npm install</code>, para instalar las dependencias necesarias.
 * Para conectar a base de datos, se debe modificar el archivo config que esta en el path <code>config/config.json</code>, de acuerdo al ambiente modificar los parametros del json y reemplazar los datos necesarios.
-* Para ejecutarlo, se debe ejecutar el comando <code>npm start</code>
-*Para comprobar el correcto funcionamiento, se puede hacer una petición Postman al host http://localhost:3100/booking, se deberá recibir como respuesta un json.
+* Para ejecutarlo, se debe ejecutar el comando <code>npm start</code>.
+* Para comprobar el correcto funcionamiento, se puede hacer una petición Postman al host http://localhost:3100/booking, se deberá recibir como respuesta un json.
 ### Autor ✒️
 
 * **Pablo Perez** - *Trabajo Inicial* - [pprezp](https://github.com/pprezp)
