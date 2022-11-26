@@ -68,4 +68,32 @@ Considerando tu proyecto seleccionado, distingue los elementos de Scrum que revi
 * [Video TestNG1](https://drive.google.com/file/d/1gvlUvW91jS52QsUw9sgYKrA0CBkBKErU/view?usp=share_link)
 * [Video TestNG2](https://drive.google.com/file/d/1yEcUO2UaUZiq8bkiicgJk7ivEDa4fIjo/view?usp=share_link)
 
-## Creacion de contenedores con Terraform
+## Operaciones de Infraestructura como código (ansible, terraform y packer)
+
+El proyecto con la construcción de los contenedores necesarios para la ejecucion de este flujo se pueden encontrar [aquí](https://github.com/pprezp/myAPIterraform).
+
+En el repositorio se encuentran los archivos de terraform y docker para crear los contenedores con las aplicacones necesarias.
+
+
+## Presentación del proyecto
+
+### Construido con 🛠️
+
+* [NodeJS]() Lenguaje utilizado
+* [Express]() Framework para generar el servidor web
+* [Sequelize]() ORM para conexión con base de datos
+
+
+### Pasos para implementarlo localmente
+* Para replicar este repo, deberas tener al menos la version 12 de NodeJS
+* Descargar a tu maquina con el comando <code> git clone</code>
+* Una vez en local, desde terminal ingresar a la raíz del proyecto y ejecutar <code>npm install</code>, para instalar las dependencias necesarias.
+* Para conectar a base de datos, se debe modificar el archivo config que esta en el path <code>config/config.json</code>, de acuerdo al ambiente modificar los parametros del json y reemplazar los datos necesarios.
+* Para ejecutarlo, se debe ejecutar el comando <code>npm start</code>
+*Para comprobar el correcto funcionamiento, se puede hacer una petición Postman al host http://localhost:3100/booking, se deberá recibir como respuesta un json.
+### Autor ✒️
+
+* **Pablo Perez** - *Trabajo Inicial* - [pprezp](https://github.com/pprezp)
+
+---
+⌨️ con ❤️ por [pprezp](https://github.com/pprezp) 😊
